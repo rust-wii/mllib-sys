@@ -1,5 +1,5 @@
 [package]
-name = "ml-sys"
+name = "mllib-sys"
 version = "0.1.0"
 authors = ["Seán Kelly <daxorinator@gmail.com>"]
 edition = "2018"
@@ -12,3 +12,18 @@ optional = true
 
 [features]
 default = ["libc"]
+
+[package]
+description = "mllib-sys is a crate for using MLlib (The Wii homebrew-game framework) with Rust"
+
+documentation = "docs.rs/mllib-sys"
+homepage = "github.com/rust-wii"
+repository = "github.com/rust-wii/mllib-sys"
+readme = "README.md"
+keywords = ["MLlib", "wii", "rust-wii", "nintendo"]
+categories = ["embedded", "external-ffi-bindings", "game-engines", "hardware-support", "multimedia"]
+license = "MIT"
+license-file = "LICENSE"
+maintainence = {status = "passively-maintained}
+is-it-maintained-open-issues = {repository = "github.com/rust-wii/mllib-sys"}
+
