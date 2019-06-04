@@ -1,0 +1,14 @@
+[package]
+name = "ml-sys"
+version = "0.1.0"
+authors = ["Seán Kelly <daxorinator@gmail.com>"]
+edition = "2018"
+
+[dependencies.libc]
+git = "https://github.com/rust-wii/libc.git"
+branch = "wii"
+default-features = false
+optional = true
+
+[features]
+default = ["libc"]
