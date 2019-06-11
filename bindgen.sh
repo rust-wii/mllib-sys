@@ -17,7 +17,6 @@ DEVKITPPC="C:/devkitpro/devkitPPC"
 CLANGINCLUDE="C:/Program_Files/LLVM/lib/clang/8.0.0/include/"
 OGCINCLUDE="C:/devkitPro/libogc/include/"
 
-
 bindgen "$DEVKITPRO/MLlib/include/MLlib.h" \
     -o src/mllib.rs \
     --rust-target nightly \
@@ -27,8 +26,8 @@ bindgen "$DEVKITPRO/MLlib/include/MLlib.h" \
     --ctypes-prefix "::libc" \
     --no-prepend-enum-name \
     --generate "functions,types,vars" \
-    --blacklist-type "u(8|16|32|64)" \
-    --blacklist-type "i(8|16|32|64)" \
+    --blacklist-type "u(8|16|32|64|128)" \
+    --blacklist-type "i(8|16|32|64|128)" \
     --blacklist-type "f(32|64)" \
     -- \
     --target=powerpc-none-eabi \
